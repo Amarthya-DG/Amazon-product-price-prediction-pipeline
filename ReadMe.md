@@ -105,3 +105,12 @@ Predicted vs Actual Prices scatter plots.
 Prediction vs Actual Price Distributions.
 Model performance comparison (bar chart).
 Feature importance for XGBoost.
+
+![Screenshot 2024-12-10 195502](https://github.com/user-attachments/assets/97d769ff-0042-4971-b346-614e8e533a71)
+
+![Screenshot 2024-12-10 195524](https://github.com/user-attachments/assets/2c221010-7d46-44f4-8520-7b31b9dfccdb)
+
+![Screenshot 2024-12-10 195544](https://github.com/user-attachments/assets/06fde5e1-60a2-4282-8773-5608dc202d99)
+
+
+
