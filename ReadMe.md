@@ -1,13 +1,16 @@
 ## Amazon Product Price Optimization Pipeline
 Project Overview
-This project fetches real-time product data from the Amazon API, processes and stores it in an Amazon S3 bucket, and builds a Machine Learning (ML) model to optimize product pricing. The ML models used include Linear Regression, Random Forest, and XGBoost. Key tasks include:
+
+This project fetches real-time product data from the Amazon API through rapid api, processes and stores it in an Amazon S3 bucket, and builds a Machine Learning (ML) model to optimize product pricing. The ML models used include Linear Regression, Random Forest, and XGBoost. Key tasks include:
 
 Fetching product data from the Amazon API.
 Cleaning and preprocessing the data.
 Uploading the processed data to an Amazon S3 bucket.
 Building an ML pipeline for price prediction and optimization.
 Comparing model performances and visualizing results.
+
 Project Workflow
+
 1. Data Fetching
 File: api_fetch.py
 Fetches product data using the RapidAPI Amazon API.
@@ -17,10 +20,13 @@ Sales volume
 Ratings
 Discount percentage
 Saves the processed data locally as filtered_product_category_data.csv.
+
 2. Uploading Data to Amazon S3
 File: upload_to_s3.py
+
 Uploads the processed CSV file to an Amazon S3 bucket using the boto3 library.
 Configurable S3 bucket and credentials are set in the config.py file.
+
 3. Machine Learning Pipeline
 File: spark_ml_pipeline.py
 Reads the data directly from the S3 bucket into a PySpark DataFrame.
@@ -40,9 +46,9 @@ Feature importance for XGBoost.
 Predicted vs Actual Prices scatter plot.
 Price distribution comparison.
 Model comparison (MAE vs RMSE bar chart).
+
+
 Directory Structure
-plaintext
-Copy code
 project-root/
 │-- api_fetch.py
 │-- upload_to_s3.py
